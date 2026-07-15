@@ -1,7 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --background-color: darkblue;
     --text-color: darkblue;
     --font-family: sans-serif;
+    --margin: 1rem;
 }
 
 nav {
@@ -18,32 +25,43 @@ nav a {
 h1 {
     color: var(--text-color);
     font-family: var(--font-family);
+    padding: .5rem;
 }
 
 main img {
     width: 150px;
-    height: auto;
+    /* height auto was here */
+    height: 180px;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
     padding: 0;
     font-family: var(--font-family);
+    margin: var(--margin);
 }
 
 main {
     max-width: 500px;
 }
 
-aside {
+/* aside {
     width: 35rem;
     margin: 1px;
     border: 2px solid white;
     padding: 1rem;
     background-color: lightblue;
     color: black;
+} */
+
+aside {
+    width: 20em;
+    text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -51,8 +69,27 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 65px;
+    left: 110px;
+}
+
 footer {
     margin-top: 5%;
     border-top: 1px solid black;
     text-align: center;
+}
+
+/* class selector */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
+}
+
+.indent {
+    padding-left: 2rem;
 }
