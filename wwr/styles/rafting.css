@@ -1,0 +1,104 @@
+/* universal to get rid of the default margins and paddings so you can have more control of the content positioning*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* css variables to make it easier to manage and change stylings*/
+:root {
+    --primary-color: #2596be;
+    --secondary-color: white;
+    --text-color: #000;
+    --body-font: serif;
+}
+
+/* applies to all content within the body tags */
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.smiling-client img {
+    width: 20%;
+    height: auto;
+}
+
+h1,
+h2 {
+    font-family: var(--body-font);
+    color: var(--secondary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+h1 {
+    position: absolute;
+    top: 30px;
+    left: 1px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--primary-color);
+}
+
+article {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    width: 90%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--primary-color);
+}
+
+section h2 {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 16px;
+    display: block;
+    width: 100%;
+}
+
+section p {
+    text-align: center;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
+.socialmedia img {
+    width: 20%;
+}
+
+.socialmedia a {
+    /* removes lines below link content*/
+    text-decoration: none;
+}
