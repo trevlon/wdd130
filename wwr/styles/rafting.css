@@ -48,7 +48,7 @@ header img {
 /* removing the underline from a tag links, and edting the color and font size as well */
 .flex-links a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 18px;
     font-weight: bold;
 }
@@ -102,8 +102,12 @@ article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
+    /* opacity: 0.7; */
     background-color: var(--primary-color);
+}
+
+.hero p {
+    color: black;
 }
 
 .hero article {
@@ -114,7 +118,7 @@ article {
     width: 90%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
+    /* opacity: 0.7; */
     background-color: var(--primary-color);
 }
 
@@ -173,8 +177,9 @@ footer {
 footer p {
     margin-top: -50px;
     margin-left: 35%;
-    color: white;
+    color: black;
     font-size: 18px;
+    font-weight: bold;
 }
 
 /* this class name is set to flex and grid-row to get the content withing the class aligned */
