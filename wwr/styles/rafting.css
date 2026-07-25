@@ -49,7 +49,7 @@ header img {
 .flex-links a {
     text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -76,7 +76,9 @@ footer {
 }
 
 .smiling-client {
+    font-size: 20px;
     margin-top: 200px;
+    color: white;
 }
 
 h1,
@@ -123,12 +125,12 @@ section {
 }
 
 section h2 {
-    /* background-color: var(--primary-color); */
+    background-color: var(--primary-color);
     text-align: center;
     padding: 16px;
-    display: block;
+    /* display: block; */
     width: 100%;
-    color: var(--text-color);
+    color: var(--secondary-color);
 }
 
 section p {
@@ -162,7 +164,6 @@ section img {
 footer {
     display: grid;
     grid-template-rows: 50px 50px 50px 50px;
-    width: 10%;
     height: auto;
     background: var(--primary-color);
     width: 100%;
@@ -173,6 +174,7 @@ footer p {
     margin-top: -50px;
     margin-left: 35%;
     color: white;
+    font-size: 18px;
 }
 
 /* this class name is set to flex and grid-row to get the content withing the class aligned */
