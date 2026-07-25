@@ -19,7 +19,40 @@ body {
     color: var(--text-color);
 }
 
-header,
+/* made the header a grid to help put image and nav together in grid*/
+header {
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    background: var(--primary-color);
+    width: 100%;
+    height: 140px;
+    padding: 25px;
+}
+
+header img {
+    margin-left: 20%;
+    width: 120px;
+}
+
+/* class where nav links is located which is displayed as flex to put nav content in a row */
+.flex-links {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* removing the underline from a tag links, and edting the color and font size as well */
+.flex-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+/* header, */
 main,
 footer {
     width: 840px;
@@ -41,13 +74,17 @@ footer {
     height: auto;
 }
 
+.smiling-client {
+    margin-top: 200px;
+}
+
 h1,
 h2 {
     font-family: var(--body-font);
     color: var(--secondary-color);
 }
 
-nav,
+/* nav, */
 p,
 section,
 article {
@@ -68,7 +105,8 @@ article {
 
 .hero article {
     position: absolute;
-    bottom: 20px;
+    /* bottom: 20px; */
+    top: 220px;
     left: 25px;
     width: 90%;
     padding: 16px;
@@ -77,16 +115,41 @@ article {
     background-color: var(--primary-color);
 }
 
+section {
+    display: flex;
+    grid-row: 1 / 3;
+    place-items: center;
+}
+
 section h2 {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     text-align: center;
     padding: 16px;
     display: block;
     width: 100%;
+    color: var(--text-color);
 }
 
 section p {
+    display: block;
     text-align: center;
+}
+
+section img {
+    width: 30%;
+    height: auto;
+}
+
+/* displayed the list of images as flex to get them in a row then used grid-row property for row positioning */
+.list-of-images {
+    display: flex;
+    grid-row: 1 / 6;
+    justify-content: space-evenly;
+}
+
+/* all images in list have the same size */
+.list-of-images img {
+    width: 250px;
 }
 
 .hero article img {
@@ -94,8 +157,37 @@ section p {
     width: 125px;
 }
 
+/* made the parent display grid, and I set the rows, and gave it a width of 100% */
+footer {
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px;
+    width: 10%;
+    height: auto;
+    background: var(--primary-color);
+    width: 100%;
+}
+
+/* just positioning the footer section paragraphs */
+footer p {
+    margin-top: -50px;
+    margin-left: 35%;
+    color: white;
+}
+
+/* this class name is set to flex and grid-row to get the content withing the class aligned */
+.socialmedia {
+    display: flex;
+    grid-row: 1/4;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+/* positioning the image icons */
 .socialmedia img {
-    width: 20%;
+    width: 30px;
+    margin-left: -300%;
+    margin-top: 100px;
+
 }
 
 .socialmedia a {
