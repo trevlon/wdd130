@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: darkblue;
+}
+
+body {
+    font-family: serif;
+    font-size: 18px;
+}
+
+h1 {
+    color: var(--text-color);
+    text-align: center;
+}
+
+.sub-contact-head {
+    margin-top: 20px;
+    color: var(--text-color);
+    margin-right: 45%;
+    font-weight: normal;
+}
+
+.sub-questions-head {
+    margin-top: 28px;
+    color: var(--text-color);
+    margin-right: 62%;
+    font-weight: normal;
+}
+
+/* 
+.form-item {
+    border: 1px solid black;
+} */
+
+.border-section-c input {
+    width: 20px;
+    margin-left: 110%;
+    margin-top: -25px;
+}
+
+form {
+    display: grid;
+    place-items: center;
+    flex-direction: column;
+    background-color: #ededed;
+    width: 40%;
+    padding: 18px;
+    margin-left: 30%;
+    margin-top: 25px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    gap: 10px;
+    font-family: serif;
+}
+
+fieldset {
+    display: grid;
+    gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+}
+
+.column1 label {
+    text-align: center;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin-left: 20%;
+    width: 200%;
+}
+
+.column2 label {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+#browser {
+    margin-left: -25%;
+}
+
+#pet {
+    width: 5%;
+    margin-left: 94.5%;
+    margin-top: -8%;
+}
+
+#feedback {
+    position: relative;
+    right: -10%;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+}
+
+input {
+    display: flex;
+    place-items: center;
+    width: 200%;
+    height: 31px;
+}
+
+#browser {
+    width: 100px;
+    height: 35px
+}
+
+.flex-change {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    width: 80%;
+}
+
+.flex-change label {
+    text-align: center;
+}
+
+.flex-change textarea {
+    font-size: 18px;
+}
+
+button {
+    background-color: var(--text-color);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 5%;
+}

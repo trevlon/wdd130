@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A form</title>
+    <meta name="description" content="Making a form for week 5 activity">
+    <meta name="author" content="Trevlon Thomas">
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <header>
+        <h1>WDD | HTML FORM - USER POLL</h1>
+    </header>
+
+    <fieldset>
+        <form>
+            <fieldset>
+                <h2 class="sub-contact-head">Contact Information</h2>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:<input type="text" id="fullname" name="fullname"
+                          required></label>
+                </div>
+
+                <div class="form-item column2">
+                    <label for="useremail">Email:<input type="email" id="useremail" name="useremail"
+                          required></label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <h2 class="sub-questions-head">Questions</h2>
+                <div class="form-item column1">
+                    <label for="browser">What is your favourite browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?<input type="checkbox" id="pet"
+                          name="pet"></label>
+                </div>
+
+                <div class="flex-change">
+                    <label for="feedback">List the places you have lived:</label>
+                    <br>
+                    <textarea id="feedback" name="feedback" rows="5"
+                      placeholder="Diego Martin, Arima, Tunapuna"></textarea>
+                </div>
+                </div>
+            </fieldset>
+
+            <button type="submit">Submit Poll</button>
+        </form>
+
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+</body>
+
+</html>
