@@ -81,8 +81,12 @@ footer {
     color: white;
 }
 
-h1,
-h2 {
+.hero h1 {
+    font-family: var(--body-font);
+    color: var(--secondary-color);
+}
+
+.section h2 {
     font-family: var(--body-font);
     color: var(--secondary-color);
 }
@@ -201,4 +205,80 @@ footer p {
 .socialmedia a {
     /* removes lines below link content*/
     text-decoration: none;
+}
+
+.hero-title {
+    font-family: var(--body-font);
+    text-align: center;
+}
+
+.hero-title h2 {
+    font-size: 18px;
+    font-family: var(--body-font);
+}
+
+form {
+    width: 20%;
+    display: grid;
+    flex-direction: column;
+    border: none;
+    padding: 18px;
+    width: 25%;
+    margin-left: 50%;
+}
+
+#name,
+#useremail {
+    width: 60%;
+    padding: 10px;
+}
+
+.name-label input {
+    margin-left: 20%;
+}
+
+.email-label input {
+    margin-left: 20%;
+}
+
+.message {
+    margin-left: 35%;
+}
+
+button {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: lightgrey;
+    margin-top: 10px;
+}
+
+.google-map {
+    position: absolute;
+    right: 50%;
+}
+
+.section-two h2 {
+    text-align: center;
+}
+
+.three-images img {
+    display: inline;
+    margin-left: 160px;
+    vertical-align: middle;
+}
+
+.first-image {
+    width: 19%;
+    height: auto;
+}
+
+.second-image {
+    width: 19%;
+    height: auto;
+}
+
+.third-image {
+    width: 18.2%;
+    height: auto;
 }
