@@ -276,3 +276,20 @@ button {
     width: 18.2%;
     height: auto;
 }
+
+.text-for-profile {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text-one {
+    margin-right: 10%;
+}
+
+.text-two {
+    margin-right: 5%;
+}
+
+.text-three {
+    margin-right: 5%;
+}
